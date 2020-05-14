@@ -10,7 +10,7 @@
 <body id="body">
     <nav id="navbar">
         <ul>
-            <li class="navitem"><a href="#navbar">Welcome</a></li>
+            <li class="navitem"><a href="#welcome-section">Welcome</a></li>
             <li class="navitem"><a href="#projects">Portfolio</a></li>
             <!-- <li class="navitem"><a href="#">Values</a></li> -->
             <li class="navitem"><a href="#social">Contact</a></li>
@@ -19,18 +19,23 @@
     <section id="hiStripe">
         <h1>Hi...</h1>
     </section>
-        <section id="welcome-section"> 
-            <header>
-                <h1>Im Tom Kilpatrick</h1>
-            </header>
-                <p>Welcome to my website</p>
-                <br>
-                <p>Im a front end Web Developer</p>
-        </section>
+    <section id="welcome-section"> 
+        <header>
+            <h1>Im Tom Kilpatrick</h1>
+            <!-- <p>(BSc Hons, CCNA)</p> -->
+        </header>
+        <!--<br> -->
+        <p>Welcome to my website</p>
+        <br>
+        <p>Im a front end Web Developer</p>
+    </section> <!--
+    <div>
+        <img src="" alt="Toms Photo" id="toms-photo">
+    </div>  -->
     <article id="projects">
             <div class="project-tile">
                 <div class="project-viewport">
-                    <a href="https://codepen.io/tt7182/full/jObZbxP"><img class="link-image" src="/Elon-Musk-Tribute.jpg" alt="Elon Musk site preview"></a>
+                    <a href="https://codepen.io/tt7182/full/jObZbxP"><img class="link-image" src="Elon-Musk-Tribute.jpg" alt="Elon Musk site preview"></a>
                 </div>
                 <p>Tribute Page</p>
             </div>
@@ -42,7 +47,7 @@
             </div>
             <div class="project-tile">
                 <div class="project-viewport">
-                    <a href="https://codepen.io/tt7182/full/WNQMmMq"><img class="link-image" src="/JavaScript-for-Beginners.jpg" alt="Sample Survey form preview"></a>
+                    <a href="https://codepen.io/tt7182/full/WNQMmMq"><img class="link-image" src="JavaScript-for-Beginners.jpg" alt="Sample Survey form preview"></a>
                 </div>
                 <p>JavaScript for Beginners</p>
             </div>
@@ -54,9 +59,9 @@
         </article>
         <div id="social">
             <h3>Contact me at the links below;</h3>
-            <div class="icon"><a id="profile-link" target="_blank" href="https://github.com/tom-NI?tab=projects"><img class="icon" src="/GitHub-Mark-120px-plus.png" alt="Github Social Media link"></a></div>
-            <div class="icon"><a href="mailto:masterchef7182@gmail.com"><img class="icon" src="/email-logo.svg" alt="at logo email link"></a></div>
-            <div class="icon"><a href=""><img class="icon" src="/phone-logo-black.svg" alt=""></a></div>
+            <div class="icon"><a id="profile-link" target="_blank" href="https://github.com/tom-NI?tab=projects"><img class="icon" src="GitHub-Mark-120px-plus.png" alt="Github Social Media link"></a></div>
+            <div class="icon"><a href="mailto:masterchef7182@gmail.com"><img class="icon" src="email-logo.svg" alt="at logo email link"></a></div>
+            <div class="icon"><a href=""><img class="icon" src="phone-logo-black.svg" alt=""></a></div>
         </div>
         <form action="post" id="form">
             <label for="name" class="label">Your Name (required);</label>
@@ -67,8 +72,5 @@
              <textarea name="textarea" id="textarea" cols="30" rows="3" required placeholder="Hi Tom, we would like to enquire about..." maxlength="200"></textarea>
             <button type="submit" id="submit">Submit</button>
         </form>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
-
-
