@@ -1,7 +1,9 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
+    background-color: white;
 }
 
 #navbar {
@@ -30,7 +32,7 @@
     text-align: center;
     margin-right: 10px; 
 } 
-
+/* 
 #toms-photo {
     width: 250px;
     height: 250px;
@@ -40,6 +42,7 @@
     padding-top: 500px;
     z-index:9999;
 } 
+*/
 
 ul {
     margin: 0;
@@ -90,7 +93,6 @@ a {
     gap: 60px;
     min-height: 100vh;
     margin-left: 35vw;
-    margin-right: 150px;
     padding: 150px 0px 200px 0px;
 }
 
@@ -250,7 +252,6 @@ textarea {
 
     #projects {
         margin-left: 5vw;
-        margin-right: 5vw;
         padding-top: 325px;
     }
 
@@ -265,7 +266,7 @@ textarea {
 
     #social {
         margin-left: 10vw;
-        min-width: 350px;
+        min-width: 90vw;
         padding-top: 20vh;
         height: auto;
     }
