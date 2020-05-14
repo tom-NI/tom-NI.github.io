@@ -216,14 +216,14 @@ textarea {
     } 
     
     #navbar {
-        display:inline-block;
-        width: auto;
+        display:block;
+        width: 100%;
         background-color: transparent;
         z-index: 9999;
         color: white;
-        padding-top: 30px;
-        padding-left: 10vw;
+        padding: 30px;
         margin: auto; 
+        text-align: center;
     }
     
     #hiStripe>h1 {
@@ -232,19 +232,25 @@ textarea {
     
     .navitem {
         width: auto;
+        padding: 5px;
+        padding-right: 10px;
+        font-size: 16px;
+        font-variant: small-caps;
+        font-weight: bold;
     }
 
     #welcome-section {
-        margin-left: 15vw;
         min-width: 50vw;
         font-size: 25px;
         height: 100vh;
         padding-top: 50vh;
+        margin:auto;
+        margin-left: 10vw;
     } 
 
     #projects {
-        margin-left: 10vw;
-        margin-right: 10vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
         padding-top: 325px;
     }
 
@@ -258,8 +264,8 @@ textarea {
     }
 
     #social {
-        margin-left: 15vw;
-        width: 380px;
+        margin-left: 10vw;
+        min-width: 350px;
         padding-top: 20vh;
         height: auto;
     }
@@ -281,10 +287,10 @@ textarea {
     #form {
         display: flex;
         flex-direction: column;
-        margin-left: 15vw;
-        width: 350px;
-        padding-top: 20px;
+        margin-left: 10vw;
+        width: 80%;
         padding-bottom: 10px;
+        padding-top: 5px;
     }
 
 } 
