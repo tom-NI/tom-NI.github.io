@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom K - Web Developer</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body id="body">
     <nav id="navbar">
         <ul>
-            <li class="navitem"><a href="#welcome-section">Welcome</a></li>
+            <li class="navitem"><a href="#welcome-section">Home</a></li>
             <li class="navitem"><a href="#projects">Portfolio</a></li>
             <!-- <li class="navitem"><a href="#">Values</a></li> -->
             <li class="navitem"><a href="#social">Contact</a></li>
         </ul>
     </nav>
     <section id="hiStripe">
+        <img id="codeimage" src="chris-ried-small_desaturated_blurred.jpg" alt="Code image background">
         <h1>Hi...</h1>
     </section>
-    <section id="welcome-section"> 
-        <header>
-            <h1>Im Tom Kilpatrick</h1>
-            <!-- <p>(BSc Hons, CCNA)</p> -->
-        </header>
-        <!--<br> -->
-        <p>Welcome to my website</p>
-        <br>
-        <p>Im a front end Web Developer</p>
-    </section> <!--
-    <div>
-        <img src="" alt="Toms Photo" id="toms-photo">
-    </div>  -->
+    <section id="welcome-section">
+        <div id="main_text_border">
+            <header>
+                <h1>Im Tom Kilpatrick</h1>
+                <!-- <p>(BSc Hons, CCNA)</p> -->
+            </header>
+            <!--<br> -->
+            <p>Software Developer</p>
+            <br>
+            <p>Welcome to my website</p>
+        </div>
+    </section>
     <article id="projects">
-            <div class="project-tile">
-                <div class="project-viewport">
-                    <a href="https://codepen.io/tt7182/full/jObZbxP"><img class="link-image" src="Elon-Musk-Tribute.jpg" alt="Elon Musk site preview"></a>
-                </div>
-                <p>Tribute Page</p>
+        <div class="project-tile">
+            <div class="project-viewport">
+                <a href="https://codepen.io/tt7182/full/jObZbxP"><img class="link-image" src="Elon-Musk-Tribute.jpg"
+                        alt="Elon Musk site preview"></a>
             </div>
-            <div class="project-tile">
-                <div class="project-viewport">
-                    <a href="https://codepen.io/tt7182/full/dyYdMmO"><img class="link-image" src="Sample-Survey-Form.jpg" alt="Sample Survey form preview"></a>
-                </div>
-                <p>Sample Survey Form</p>
+            <p>Tribute Page</p>
+        </div>
+        <div class="project-tile">
+            <div class="project-viewport">
+                <a href="https://codepen.io/tt7182/full/dyYdMmO"><img class="link-image" src="Sample-Survey-Form.jpg"
+                        alt="Sample Survey form preview"></a>
             </div>
-            <div class="project-tile">
-                <div class="project-viewport">
-                    <a href="https://codepen.io/tt7182/full/WNQMmMq"><img class="link-image" src="JavaScript-for-Beginners.jpg" alt="Sample Survey form preview"></a>
-                </div>
-                <p>JavaScript for Beginners</p>
+            <p>Sample Survey Form</p>
+        </div>
+        <div class="project-tile">
+            <div class="project-viewport">
+                <a href="https://codepen.io/tt7182/full/WNQMmMq"><img class="link-image"
+                        src="JavaScript-for-Beginners.jpg" alt="Sample Survey form preview"></a>
             </div>
-            <!--
+            <p>JavaScript for Beginners</p>
+        </div>
+        <!--
             <div class="project-tile">
                 <div class="project-viewport"></div>
                 <p>Private Budgeter Website</p>
             </div> -->
-        </article>
-        <div id="social">
-            <h3>Contact me at the links below;</h3>
-            <div class="icon"><a id="profile-link" target="_blank" href="https://github.com/tom-NI?tab=projects"><img class="icon" src="GitHub-Mark-120px-plus.png" alt="Github Social Media link"></a></div>
-            <div class="icon"><a href="mailto:masterchef7182@gmail.com"><img class="icon" src="email-logo.svg" alt="at logo email link"></a></div>
-            <div class="icon"><a href=""><img class="icon" src="phone-logo-black.svg" alt=""></a></div>
-        </div>
-        <form action="post" id="form">
-            <label for="name" class="label">Your Name (required);</label>
-                <input type="text" id="name" class="input" placeholder="Enter Full name" minlength="5" maxlength="30" required>
-            <label for="email" class="label">Your email Address (required);</label>
-                <input type="email" class="input" id="email" required placeholder="enter a valid email address here">
-            <label class="label" for="textarea">Please add a short query below (required - max 200 characters);</label>
-             <textarea name="textarea" id="textarea" cols="30" rows="3" required placeholder="Hi Tom, we would like to enquire about..." maxlength="200"></textarea>
-            <button type="submit" id="submit">Submit</button>
-        </form>
+    </article>
+    <div id="social">
+        <h3>Contact me at the links below;</h3>
+        <div class="icon"><a id="profile-link" target="_blank" href="https://github.com/tom-NI?tab=projects"><img
+                    class="icon" src="GitHub-Mark-120px-plus.png" alt="Github Social Media link"></a></div>
+        <div class="icon"><a href="mailto:masterchef7182@gmail.com"><img class="icon" src="email-logo.svg"
+                    alt="at logo email link"></a></div>
+        <div class="icon"><a href=""><img class="icon" src="phone-logo-black.svg" alt=""></a></div>
+    </div>
+    <form action="post" id="form">
+        <label for="name" class="label">Your Name (required);</label>
+        <input type="text" id="name" class="input" placeholder="Enter Full name" minlength="5" maxlength="30" required>
+        <label for="email" class="label">Your email Address (required);</label>
+        <input type="email" class="input" id="email" required placeholder="enter a valid email address here">
+        <label class="label" for="textarea">Please add a short query below (required - max 200 characters);</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="3" required
+            placeholder="Hi Tom, we would like to enquire about..." maxlength="200"></textarea>
+        <button type="submit" id="submit">Submit</button>
+    </form>
 </body>
+
 </html>

@@ -18,6 +18,9 @@
 }
 /*side screen for entire website*/
 #hiStripe {
+    background-image: url(chris-ried-small_desaturated_blurred.jpg);
+    object-fit: cover;
+    object-position: 50% 100%;
     display:flex;
     flex-direction: column;
     width: 30vw;
@@ -26,11 +29,23 @@
     position: fixed;
     margin: auto;
     font-size: 72px;
-    padding-top: 40vh;
+    /* padding-top: 40vh; */
     color: white;
     text-align: center;
-    margin-right: 10px; 
+    margin-right: 10px;
+    z-index: 0;
 } 
+
+#hiStripe h1 {
+    z-index:999;
+}
+
+#codeimage {
+    object-fit: cover;
+    object-position: centre bottom;
+}
+
+
 /* 
 #toms-photo {
     width: 250px;
@@ -58,6 +73,11 @@ ul {
     box-sizing: content-box;
 }
 
+.navitem a:hover {
+    border-bottom: thin solid black;
+    border-top: thin solid black;
+}
+
 #welcome-section {
     display: block;
     margin-left: 35vw;
@@ -66,6 +86,13 @@ ul {
     min-width: 50vw;
     font-size: 30px;
     height: 100vh;
+}
+
+#main_text_border {
+    display: inline-block;
+    padding: 15px;
+    padding-right: 40%;
+    border: thin solid black;
 }
 
 .arrow {
@@ -206,6 +233,7 @@ textarea {
 
 @media only screen and (max-width: 600px) {
     #hiStripe {
+        /* background-image: url(chris-ried-small_desaturated_blurred.jpg); */
         display:block;
         width: 100vw;
         background-color: black;
@@ -214,7 +242,7 @@ textarea {
         margin: auto;
         color: white;
         z-index: 0;
-    } 
+    }
     
     #navbar {
         display:block;
