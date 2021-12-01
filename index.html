@@ -3,83 +3,345 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom K - Web Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link defer rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <script defer src="https://kit.fontawesome.com/06c5b011c2.js" crossorigin="anonymous"></script>
+    <script defer src="/script.js"></script>
+    <link rel="icon" href="/images/favi4.png" type="image/x-icon">
+    <title>Tom Kilpatrick's Projects</title>
 </head>
 
-<body id="body">
-    <nav id="navbar">
-        <ul>
-            <li class="navitem"><a href="#welcome-section">Home</a></li>
-            <li class="navitem"><a href="#projects">Portfolio</a></li>
-            <!-- <li class="navitem"><a href="#">Values</a></li> -->
-            <li class="navitem"><a href="#social">Contact</a></li>
-        </ul>
+<body class="main_site">
+    <nav class="navbar py-3" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="">
+                <img src="/images/full_name.png" height="120">
+            </a>
+
+            <a role="button" class="navbar-burger" id="nav_burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#about">Intro</a>
+                <a class="navbar-item" href="#projects">Projects</a>
+                <a class="navbar-item" href="#languages">Languages & tools</a>
+                <a class="navbar-item has-text-info" href="#contact"><strong>Contact</strong></a>
+            </div>
+        </div>
     </nav>
-    <section id="hiStripe">
-        <img id="codeimage" src="chris-ried-small_desaturated_blurred.jpg" alt="Code image background">
-        <h1>Hi...</h1>
-    </section>
-    <section id="welcome-section">
-        <div id="main_text_border">
-            <header>
-                <h1>Im Tom Kilpatrick</h1>
-                <!-- <p>(BSc Hons, CCNA)</p> -->
-            </header>
-            <!--<br> -->
-            <p>Software Developer</p>
-            <br>
-            <p>Welcome to my website</p>
-        </div>
-    </section>
-    <article id="projects">
-        <div class="project-tile">
-            <div class="project-viewport">
-                <a href="https://codepen.io/tt7182/full/jObZbxP"><img class="link-image" src="Elon-Musk-Tribute.jpg"
-                        alt="Elon Musk site preview"></a>
+
+    <div class="p-2">
+        <section id="welcome-section" class="hero is-medium is-info mb-6">
+            <div id="main_text_border" class="hero-body">
+                <div class="level">
+                    <div class="level-item">
+                        <header>
+                            <h1 class="is-size-1 has-text-weight-semibold">Hello</h1>
+                            <br>
+                            <h2 class="is-size-3">Im Tom Kilpatrick</h2>
+                            <p class="is-size-5">A Northern Ireland based Software Developer</p>
+                        </header>
+                    </div>
+                    <div class="level-item">
+                        <figure class="image is-128x128">
+                            <img class="profile_pic is-rounded" src="/images/profile-pic.jpg" alt="Portrait Photo">
+                        </figure>
+                    </div>
+                </div>
             </div>
-            <p>Tribute Page</p>
-        </div>
-        <div class="project-tile">
-            <div class="project-viewport">
-                <a href="https://codepen.io/tt7182/full/dyYdMmO"><img class="link-image" src="Sample-Survey-Form.jpg"
-                        alt="Sample Survey form preview"></a>
+        </section>
+
+        <section id="about" class="columns mt-5">
+            <div class="column is-three-fifths-desktop is-offset-one-fifth-desktop">
+                <div class="card p-5">
+                    <h2 class="is-size-4 mb-2 has-text-weight-bold">Introduction</h2>
+                    <p>I originally trained and worked in multiple other industries, and enjoyed updating processes to
+                        improve different business problems. This evolved into completing basic programming in Excel to
+                        expedite scoping, design and quoting and from this experience I decided to pursue a full-time
+                        career in Software Development.</p>
+                    <br>
+                    <p>This site is to showcase some of my most recent software projects.</p>
+                    <br>
+                    <p>Please refer to my <a href="https://www.bbc.co.uk/" target="_blank"><strong>LinkedIn
+                                Profile</strong></a> for my most recent employment and education history.</p>
+                </div>
+                <br>
             </div>
-            <p>Sample Survey Form</p>
-        </div>
-        <div class="project-tile">
-            <div class="project-viewport">
-                <a href="https://codepen.io/tt7182/full/WNQMmMq"><img class="link-image"
-                        src="JavaScript-for-Beginners.jpg" alt="Sample Survey form preview"></a>
+        </section>
+
+        <div class="spacer"></div>
+
+        <section class="mx-3 blue_back has-background-info	" id="projects">
+            <h2 class="is-size-3 pl-5 pt-6 has-text-weight-bold has-text-light	">Recent Projects</h2>
+            <article>
+                <div class="card my-6 mx-4">
+                    <h3 class="is-size-5 card-header-title pt-5">Personal Project (ongoing) - Android App</h3>
+                    <div class="columns">
+                        <figure class="column m-4">
+                            <img class="img" src="/images/app_screen.png" alt="">
+                        </figure>
+                        <div class="column mx-2">
+                            <h4 class="has-text-weight-semibold	">Justification;</h4>
+                            <p class="m-3">Build an app to solve a unique problem and learn more Java, multithreading,
+                                ORM's, Mobile development and Android Application Architecture</p>
+                            <h4 class="has-text-weight-semibold	">Languages, tools & Frameworks;</h4>
+                            <p class="m-3">Built in Java using the RxJava library for multithreading. Android Studio.
+                            </p>
+                            <h4 class="has-text-weight-semibold	">Demonstration</h4>
+                            <p class="m-3 has-text-danger-dark	">Do not hesitate to contact me for a live demonstration.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="card my-6 mx-4">
+                    <h3 class="is-size-5 card-header-title  pt-5">Masters - EasyJet Database Project</h3>
+                    <div class="columns">
+                        <div class="column m-4">
+                            <div class="video_container">
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PC9PIZ3ed6o"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="column mx-2">
+                            <h4 class="has-text-weight-semibold	">Requirements;</h4>
+                            <p class="m-3">Reverse engineer the easyjet booking database from the easyJet website, the
+                                produce and demonstrate a fully functioning database.</p>
+                            <h4 class="has-text-weight-semibold	">Deliverables;</h4>
+                            <p class="m-3">Fully functioning database, Entity Relationship Diagram, report detailing
+                                design choices and the demonstration video here.</p>
+                            <h4 class="has-text-weight-semibold	">Languages, tools & Frameworks;</h4>
+                            <p class="m-3">MySQL, PHPMyAdmin.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="card my-6 mx-4">
+                    <h3 class="is-size-5 card-header-title pt-5">Masters - Cloud Native Microservices Project</h3>
+                    <div class="columns">
+                        <div class="column m-4">
+                            <div class="video_container">
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sWpLNoYR_84"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="column mx-2">
+                            <h4 class="has-text-weight-semibold	">Requirements;</h4>
+                            <p class="m-3">Take a provided UI and build the backend as a cloud native microservices
+                                application using containers. Design to include full unit testing (checked via CI
+                                pipelines), configurable custom reverse proxy router, automated checking, logging and
+                                email reporting and a website for administrators to monitor system health.</p>
+                            <h4 class="has-text-weight-semibold	">Deliverables;</h4>
+                            <p class="m-3">Fully functioning microservices application, report detailing design choices
+                                and this demonstration video.</p>
+                            <h4 class="has-text-weight-semibold	">Languages, tools & Frameworks;</h4>
+                            <p class="m-3">PHP, HTML, CSS, JavaScript, Docker, Rancher (Kubernetes), Gitlab CI
+                                Pipelines, Gitlab container registry. Hosted on university private cloud.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="card my-6 mx-4">
+                    <h3 class="is-size-5 card-header-title pt-5">Masters - Full Stack Website, including full REST API.</h3>
+                    <div class="columns">
+                        <div class="column m-4">
+                            <div class="video_container">
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cGon5ahXSmE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="column mx-2">
+                            <h4 class="has-text-weight-semibold	">Requirements;</h4>
+                            <p class="m-3">Find a public dataset, clean and parse the data using programming logic and
+                                insert into a database. </p>
+                            <h4 class="has-text-weight-semibold	">Deliverables;</h4>
+                            <p class="m-3">Fully functioning public website with user sign up and administrator site.
+                                REST API to parse database queries from the User Interface, including REST API developer
+                                signup (email authentication and validation).</p>
+                            <h4 class="has-text-weight-semibold	">Languages, tools & Frameworks;</h4>
+                            <p class="m-3">PHP, HTML, CSS, JavaScript, MySQL. Postman used for REST API testing</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="small_spacer"></div>
+        </section>
+
+        <div class="spacer"></div>
+
+        <h2 id="languages" class="is-size-4 mt-5 has-text-weight-bold mb-6">Programming Languages</h2>
+        <div class="px-6">
+            <div class="mt-2">
+                <div class="columns is-mobile is-multiline">
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/Java.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Java</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/python.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Python</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/HTML.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">HTML</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/CSS.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">CSS</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/js.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">JavaScript</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/PHP.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">PHP</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/MySQL.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">MySQL</p>
+                    </div>
+                </div>
             </div>
-            <p>JavaScript for Beginners</p>
+
+            <div>
+                <h2 class="is-size-4 mt-5 has-text-weight-bold mb-4 mt-6">Frameworks</h2>
+                <div class="columns is-mobile is-multiline">
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/docker.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Docker</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/spring.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Spring</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/ang.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Angular</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/lang_logos/bulma.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Bulma</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="is-size-4 mt-5 has-text-weight-bold mb-4 mt-6">Platforms</h2>
+                <div class="columns is-mobile is-multiline">
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/platform_logos/os.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">OpenShift</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/platform_logos/android.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Android</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="is-size-4 mt-5 has-text-weight-bold mb-4 mt-6">Tools</h2>
+                <div class="columns is-mobile is-multiline">
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/tool_logos/intellij.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Intellij IDEA</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/tool_logos/vscode.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">VS Code</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/tool_logos/android_studio.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Android Studio</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/tool_logos/postman.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Postman</p>
+                    </div>
+                    <div class="column card m-4 is-2-desktop is-one-fifth-tablet is-two-fifths-mobile">
+                        <image class="image is-square p-0" src="/tool_logos/Git.png"></image>
+                        <p class="has-text-centered	mt-3 has-text-weight-semibold is-6">Git</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--
-            <div class="project-tile">
-                <div class="project-viewport"></div>
-                <p>Private Budgeter Website</p>
-            </div> -->
-    </article>
-    <div id="social">
-        <h3>Contact me at the links below;</h3>
-        <div class="icon"><a id="profile-link" target="_blank" href="https://github.com/tom-NI?tab=projects"><img
-                    class="icon" src="GitHub-Mark-120px-plus.png" alt="Github Social Media link"></a></div>
-        <div class="icon"><a href="mailto:masterchef7182@gmail.com"><img class="icon" src="email-logo.svg"
-                    alt="at logo email link"></a></div>
-        <div class="icon"><a href=""><img class="icon" src="phone-logo-black.svg" alt=""></a></div>
     </div>
-    <form action="post" id="form">
-        <label for="name" class="label">Your Name (required);</label>
-        <input type="text" id="name" class="input" placeholder="Enter Full name" minlength="5" maxlength="30" required>
-        <label for="email" class="label">Your email Address (required);</label>
-        <input type="email" class="input" id="email" required placeholder="enter a valid email address here">
-        <label class="label" for="textarea">Please add a short query below (required - max 200 characters);</label>
-        <textarea name="textarea" id="textarea" cols="30" rows="3" required
-            placeholder="Hi Tom, we would like to enquire about..." maxlength="200"></textarea>
-        <button type="submit" id="submit">Submit</button>
-    </form>
+
+    <div class="spacer"></div>
+
+    <div id="contact">
+        <section class="is-size-4 mt-6 mb-4">
+            <div>
+                <h2 class="is-size-4 my-4 has-text-weight-bold blue_text">Contact</h2>
+            </div>
+            <div class="level contact_card card px-6 py-5 mb-6">
+                <div class="level-item">
+                    <p class="is-size-5">Thank you for browsing my site, contact me via these links: &nbsp&nbsp&nbsp
+                    </p>
+                </div>
+                <div class="level-item">
+                    <button class="outline button is-rounded is-info mx-3">
+                        <a class="btn_text" href="https://linkedin.com/in/thomas-kilpatrick" target="_blank">
+                            <span class='icon is-left'>
+                                <i class="fab fa-linkedin mx-2"></i>
+                            </span>
+                            <span>LinkedIn</span>
+                        </a>
+                    </button>
+
+                    <button class="outline button is-rounded is-info mx-3">
+                        <a class="btn_text" href="mailto:tom-kil@outlook.com">
+                            <span class='icon is-left'>
+                                <i class="far fa-envelope mx-2"></i>
+                            </span>
+                            <span>Email</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="level">
+        <div class='level-item level-right'>
+            <button class='button is-rounded is-dark' id='back_to_top_button'>
+                <div class="btn_text">
+                    <span class='icon is-left'>
+                        <i class="fas fa-arrow-up"></i>
+                    </span>
+                    <span>Back to Top</span>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <footer class='footer pb-6'>
+        <div class='content'>
+            <div class='has-text-centered'>
+                <p id='footer_text' class='subtitle is-6 is-size-7-mobile mt-3'>© Copyright Thomas Kilpatrick</p>
+                <p>CSS Framework: <a target="_blank" href="https://bulma.io/">Bulma</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
