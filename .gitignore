@@ -1,0 +1,3 @@
+#ignore all of googles update files!
+.DS_Store
+**/*.DS_Store

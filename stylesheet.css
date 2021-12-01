@@ -75,3 +75,7 @@
     width: 100%;
     height: auto;
 }
+
+.top_img {
+    object-position: center top;
+}
