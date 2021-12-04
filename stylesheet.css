@@ -79,3 +79,7 @@
 .top_img {
     object-position: center top;
 }
+
+.black_border {
+    border: 1px black solid;
+}
