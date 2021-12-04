@@ -85,5 +85,5 @@
 }
 
 .box_shad {
-    box-shadow: 5px 5px 4px #dbdbdb;
+    box-shadow: 5px 5px 4px #dbdbdb !important; 
 }
