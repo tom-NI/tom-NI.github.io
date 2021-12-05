@@ -87,3 +87,9 @@
 .box_shad {
     box-shadow: 5px 5px 5px #dbdbdb !important;
 }
+
+@media only screen and (max-width: 1023px) {
+    .stack_btn {
+        width: 100%;
+    }
+}
